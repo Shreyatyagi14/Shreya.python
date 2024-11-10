@@ -66,28 +66,49 @@ print(int(speed))  # converting speed to an int value to print without a decimal
 #list of justice league members
 justice_league = ["Superman", "Batman", "Wonder Woman", "Flash", "Aquaman", "Green Lantern"]
 print("Initial Justice League:", justice_league)
+
+
+
 #calculating number of members
 num_members = len(justice_league)
 print(f"Number of members: {num_members}")
+
+
+
 #Batman recruiting Batgirl and Nightwing as new members
 justice_league.append("Batgirl")
 justice_league.append("Nightwing")
 print("After adding Batgirl and Nightwing:", justice_league)
+
+
+
 #Wonder Woman is the leader (move her to the beginning)
 justice_league.remove("Wonder Woman")  # Remove her current position
 justice_league.insert(0, "Wonder Woman")  # Insert at the beginning
 print("After making Wonder Woman the leader:", justice_league)
+
+
+
 #Move "Green Lantern" between Aquaman and Flash to separate them
 justice_league.remove("Green Lantern")  # Remove Green Lantern from current position
 flash_index = justice_league.index("Flash")
 justice_league.insert(flash_index, "Green Lantern")  # Insert before Flash
 print("After moving Green Lantern between Aquaman and Flash:", justice_league)
+
+
+
 #Replacing the existing team with new members
 justice_league = ["Cyborg", "Shazam", "Hawkgirl", "Martian Manhunter", "Green Arrow"]
 print("After replacing the team:", justice_league)
+
+
+
 #Sorting the Justice League alphabetically
 justice_league.sort()
 print("After sorting alphabetically:", justice_league)
+
+
+
 # Bonus: Predict the new leader (first member of sorted list)
 new_leader = justice_league[0]
 print(f"New leader of the Justice League is: {new_leader}")
